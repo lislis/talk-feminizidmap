@@ -1,0 +1,165 @@
+:root {
+  --link-color: #9F00FF;
+
+  --invert-color:  #F5E6FF;
+  --invert-bg: #120016;
+
+  --slide-bg:  #ccc;
+  --slide-text:  #120016;
+}
+
+
+@font-face {
+  font-family: "Blanco-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Blanco-Regular.eot?") format("eot"),
+       url("/assets/fonts/Blanco-Regular.woff2") format("woff2"),
+       url("/assets/fonts/Blanco-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Stabil";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/StabilGrotesk-Regular.woff") format("woff"),
+       url("/assets/fonts/StabilGrotesk-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+html, body {
+  font-family: 'Stabil';
+  letter-spacing: 0px;
+  font-weight: normal;
+  line-height: 1.6;
+  font-size: 24px;
+  color: #bbb;
+}
+
+h1, h2, h3 {
+  font-family: 'Blanco-Regular';
+  font-weight: 400;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.title {
+  font-family: 'Blanco-Regular';
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-family: 'Blanco-Regular';
+  font-size: 3rem;
+}
+
+.subtle {
+  font-size: 2rem;
+}
+
+.link {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.highlight {
+  display: inline-block;
+  border: 2px solid var(--link-color);
+}
+
+.highlight ul {
+  margin: 0;
+  padding-bottom: 0.2em;
+  padding-right: 0.8rem;
+}
+
+blockquote {
+  letter-spacing: -2px;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cite {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.half {
+  width: 50%;
+}
+
+.blend {
+
+  background-blend-mode: difference;
+}
+
+.blend2 {
+  background-blend-mode: exclusion;
+}
+
+.border {
+  text-shadow: 0 0 3px black;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.center {
+  text-align: center;
+}
+
+.remark-slide-content {
+  background-color: var(--slide-bg);
+  color: var(--slide-text);
+}
+
+
+.invert.remark-slide-content {
+  color: var(--invert-text);
+  background-color: var(--invert-bg);
+}
+
+
+table {
+  margin: auto;
+}
+table th {
+  border-bottom: 1px solid currentColor;
+}
+table th,
+table td {
+  text-align: center;
+  padding: .2em .5em;
+  border-right: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+}
+
+.flip {
+  transform: rotateY(180deg) scale(1.3);
+  display: inline-block;
+}
+
+.no-bullets ul {
+  padding: 0;
+  list-style: none;
+}
+
+small {
+  font-size: 0.5em;
+}
+
+.resources {
+  font-size: 0.5em;
+}
