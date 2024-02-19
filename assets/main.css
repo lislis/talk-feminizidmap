@@ -6,7 +6,11 @@
 
   --slide-bg:  #ccc;
   --slide-text:  #120016;
+
+  --dark-purple: #63125E;
 }
+
+
 
 
 @font-face {
@@ -80,10 +84,12 @@ h1, h2, h3 {
 }
 
 blockquote {
-  letter-spacing: -2px;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
   font-style: italic;
+  padding-left: 0.3em;
+  color: var(--dark-purple);
+  border-left: 10px solid var(--dark-purple);
 }
 
 .cite {
